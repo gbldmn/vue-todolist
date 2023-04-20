@@ -1,3 +1,31 @@
 .riga {
     text-decoration: line-through;
 }
+
+.container {
+   width: 50%;
+   border: 2px solid black;
+   border-radius: 10px;
+   background-color: aqua;
+}
+.container:hover {
+    background-color: rgb(31, 141, 141);
+}
+button {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+input {
+    border-radius: 10px;
+    background-color: rgb(31, 141, 141);
+}
+input:hover {
+    background-color: aqua;
+}
+.tre {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.fa-solid {
+    cursor: pointer;
+}
