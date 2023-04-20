@@ -2,8 +2,9 @@ const { createApp } = Vue
 
 createApp({
     data() {
-      return {
-        todos: [
+        return {
+             input: '',
+             todos: [
             {
                 text: 'Fare i compiti',
                 done: false
@@ -16,7 +17,22 @@ createApp({
                 text: 'Fare il bucato',
                 done: false
             }
-        ]
-      }
+            ]
+        }
+    },
+    methods: {
+        creaElemento(){
+
+            if( this.input != ''){
+                this.todos.push(this.input)
+            }
+        },
+        cancellazione(i){
+            this.todos.splice( i, 1 )
+        }
+            
+           
+        
+    
     }
 }).mount('#app')
