@@ -18,18 +18,20 @@
             </div>
 
             <div class="bg-secondary rounded">
-                <div class="border-bottom d-flex justify-content-between aligh-items-center p-3 bg-white">
+                <div v-for="(element, index) in todos"
+                :key="index" 
+                class="border-bottom d-flex justify-content-between aligh-items-center p-3 bg-white">
+                    <p class="m-0">{{ element.text }}</p>
+                    <i class="fa-solid fa-xmark"></i>
+                 </div>
+                <!-- <div class="border-bottom d-flex justify-content-between aligh-items-center p-3 bg-white">
                     <p class="m-0">Lorem, ipsum dolor sit</p>
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="border-bottom d-flex justify-content-between aligh-items-center p-3 bg-white">
                     <p class="m-0">Lorem, ipsum dolor sit</p>
                     <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="border-bottom d-flex justify-content-between aligh-items-center p-3 bg-white">
-                    <p class="m-0">Lorem, ipsum dolor sit</p>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
